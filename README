@@ -1,8 +1,4 @@
 功能：在Linux播放壹電視
-依賴：rtmpdump套件
+依賴：curl套件
 
 player="vlc" //可以改為自己喜歡的播放器
-
-播放不順請把
-rtmpdump -v -r $url -a $app -W $swf -p $page -y $high | $player -
-這段的high改為low
