@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #播放器
-player="mplayer"
+player="vlc"
 
 #高畫質
 high="http://nextmedia-f.akamaihd.net/nexttvlive_1_600@49187"
