@@ -9,6 +9,9 @@ high="http://nextmedia-f.akamaihd.net/nexttvlive_1_600@49187"
 #低畫質
 low="http://nextmedia-f.akamaihd.net/nexttvlive_1_300@49187"
 
+#預設畫質
+quality=$high
+
 #檢查環境
 if ! which $player > /dev/null; then
     echo "$player還沒安裝"
@@ -31,12 +34,12 @@ read Select
 case "$Select" in
     # 高畫質
     1)
-        curl $high | $player -
+        quality=$high
     ;;
 
     # 低畫質
     2)
-        curl $low | $player -
+        quality=$low
     ;;
 
     # 離開
@@ -44,4 +47,6 @@ case "$Select" in
         exit
     ;;
     esac
+
+curl $quality | $player -
 exit 0
