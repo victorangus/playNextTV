@@ -1,4 +1,6 @@
-功能：在Linux播放壹電視
-依賴：curl套件
+功能：在Linux播放壹電視。目前只有新聞台。
+
+playNextTV.sh依賴：curl、vlc套件。
+gui.sh額外依賴zenity套件。gui.sh為alpha版。
 
 player="vlc" //可以改為自己喜歡的播放器
